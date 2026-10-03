@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project case study by Abinavu M." />
+  <title>Project | Abinavu M</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101512;--paper:#f4f2eb;--lime:#b8ff37;--orange:#ff6437;--line:#28312a;--muted:#aeb5ad}*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:"Plus Jakarta Sans",sans-serif}.wrap{width:min(1180px,calc(100% - 40px));margin:auto;padding:30px 0 72px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:22px}.brand,.back,.source{color:var(--paper);text-decoration:none;font-family:"DM Mono",monospace;font-size:12px;letter-spacing:.08em}.brand b{color:var(--lime)}.back,.source{border:1px solid #596158;padding:12px 16px}.back:hover,.source:hover{border-color:var(--lime);color:var(--lime)}.eyebrow{font:12px "DM Mono",monospace;color:var(--lime);letter-spacing:.1em;margin:64px 0 16px}h1{font:clamp(35px,6vw,80px)/.96 Syne,sans-serif;letter-spacing:-.065em;margin:0;max-width:1000px}.intro{font-size:clamp(17px,2.1vw,24px);line-height:1.55;max-width:850px;margin:34px 0 44px;color:#dfe4dd}.tags{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 50px}.tags span{border:1px solid #445044;padding:8px 11px;font:12px "DM Mono",monospace;color:var(--lime)}.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{border:1px solid var(--line);padding:30px;min-height:210px}.panel h2{font:600 20px Syne,sans-serif;margin:0 0 18px}.panel p,.panel li{line-height:1.65;color:var(--muted)}.panel ul{padding-left:20px;margin:0}.source{display:inline-block;margin-top:28px}@media(max-width:720px){.wrap{width:min(100% - 28px,1180px)}.top{gap:18px}.eyebrow{margin-top:38px}.case-grid{grid-template-columns:1fr}.panel{padding:22px}.intro{margin-bottom:28px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top"><a class="brand" href="index.html">ABINAVU<b>.M</b></a><a class="back" href="index.html#projects">← ALL PROJECTS</a></header>
+    <p class="eyebrow" id="label"></p><h1 id="title"></h1><p class="intro" id="intro"></p><div class="tags" id="tags"></div><section class="case-grid" id="sections"></section><a class="source" id="source" target="_blank" rel="noreferrer" hidden>VIEW SOURCE ON GITHUB ↗</a>
+  </main>
+  <script>
+    const projects={
+      accident:{label:"01 / ESP32 SAFETY SYSTEM",title:"Multilevel Confirmation Accident Detection",intro:"A paired bike-and-helmet ESP32 safety system designed to confirm a crash before sending an emergency alert.",tags:["ESP32","ESP-NOW","Accelerometer","Pulse","GPS","GSM"],sections:[["The challenge","Impact-only detection can create false alerts during normal riding. The system needs stronger evidence before it asks for help."],["How it works","Bike and helmet ESP32 units cross-validate impact force, helmet status, pulse and GPS data. The confirmation logic distinguishes an approximately 1.0g normal ride from a 3.0–6.0g impact threshold before triggering a GSM notification."],["Key focus","Reliable sensor fusion, peer-to-peer device communication and a deliberate alert-confirmation flow for a real-world safety use case."],["Project outcome","A hardware and firmware prototype focused on reducing false-positive crash alerts while preserving rapid emergency notification."]],source:"https://github.com/abiabinavu/esp32-multilevel-accident-detection"},
+      home:{label:"02 / IOT SYSTEM",title:"Smart Home Monitoring",intro:"An ESP32-based home monitoring concept for gas-leakage and water-level detection.",tags:["ESP32","IoT","Gas Sensor","Water Level"],sections:[["The challenge","Home safety and resource monitoring benefit from simple, timely sensor-based feedback."],["System overview","The project integrates gas-leakage and water-level sensing into one ESP32 monitoring system."],["Key focus","Sensor interfacing and connected monitoring for practical household safety use cases."],["Project outcome","A compact IoT prototype that brings multiple home-monitoring signals into a single system."]]},
+      robo:{label:"03 / INTERACTION",title:"Personal Interactive Robo",intro:"A personal robotics exploration centred on responsive interaction with ESP32-powered hardware.",tags:["ESP32","Robotics","Embedded C"],sections:[["The goal","Explore how a compact embedded device can react meaningfully to its environment and user input."],["System overview","The project uses ESP32-powered hardware as the basis for responsive robotic interaction."],["Key focus","Embedded C, hardware integration and the feedback loop between sensing, control and response."],["Project outcome","An ongoing personal robotics exploration that develops practical embedded-systems design skills."]]}
+    };
+    const key=new URLSearchParams(location.search).get("project");const project=projects[key]||projects.accident;document.title=`${project.title} | Abinavu M`;document.querySelector('#label').textContent=project.label;document.querySelector('#title').textContent=project.title;document.querySelector('#intro').textContent=project.intro;document.querySelector('#tags').innerHTML=project.tags.map(tag=>`<span>${tag}</span>`).join('');document.querySelector('#sections').innerHTML=project.sections.map(([heading,text])=>`<article class="panel"><h2>${heading}</h2><p>${text}</p></article>`).join('');if(project.source){const link=document.querySelector('#source');link.href=project.source;link.hidden=false;}
+  </script>
+</body>
+</html>
