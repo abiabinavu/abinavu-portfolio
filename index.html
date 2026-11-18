@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abinavu M | Embedded Systems Engineer Portfolio</title>
+<meta name="description" content="Abinavu M is an embedded systems engineer and final-year ECE student in Tamil Nadu, India, building ESP32, STM32, Arduino, firmware and IoT projects.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://abiabinavu.github.io/abinavu-portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abinavu M | Embedded Systems Engineer Portfolio">
+<meta property="og:description" content="Embedded systems engineer building ESP32, STM32, Arduino and IoT projects.">
+<meta property="og:url" content="https://abiabinavu.github.io/abinavu-portfolio/">
+<meta property="og:image" content="https://abiabinavu.github.io/abinavu-portfolio/assets/photo.png">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abinavu M",
+  "url": "https://abiabinavu.github.io/abinavu-portfolio/",
+  "jobTitle": "Embedded Systems Engineer",
+  "description": "Final-year Electronics and Communication Engineering student building embedded systems, firmware and IoT projects with ESP32, STM32 and Arduino.",
+  "image": "https://abiabinavu.github.io/abinavu-portfolio/assets/photo.png",
+  "sameAs": [
+    "https://github.com/abiabinavu",
+    "https://linkedin.com/in/abi-abinavu-894589358"
+  ],
+  "knowsAbout": ["Embedded Systems", "Embedded C", "Firmware", "ESP32", "STM32", "Arduino", "Internet of Things"]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--n:#14213D;--c:#F4EDE0;--r:#FF6B5B;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--n);color:var(--c);font:400 17px/1.6 Manrope,system-ui,sans-serif}
+h1,h2,h3{font-weight:300;margin:0;line-height:1.02;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--r);outline-offset:3px}
+body::before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(40% 45% at 62% 62%,var(--r),transparent 70%),radial-gradient(30% 35% at 30% 40%,rgba(244,237,224,.35),transparent 70%);filter:blur(60px);animation:drift 14s ease-in-out infinite alternate}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,rgba(20,33,61,.55) 0 3px,rgba(244,237,224,.07) 3px 7px)}
+.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 5vw 4vh}
+.hero .glow,.hero .flute{display:none}
+.glow{position:absolute;inset:-20%;background:radial-gradient(40% 45% at 62% 62%,var(--r),transparent 70%),radial-gradient(30% 35% at 30% 40%,rgba(244,237,224,.35),transparent 70%);filter:blur(60px);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-6%,-4%) scale(1.1)}}
+.flute{position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(20,33,61,.55) 0 3px,rgba(244,237,224,.07) 3px 7px);backdrop-filter:blur(2px)}
+#scope{position:absolute;inset:0;width:100%;height:100%;opacity:.4}
+nav{position:fixed;z-index:20;top:calc(14px + env(safe-area-inset-top,0px));left:5vw;right:5vw;display:flex;justify-content:space-between;align-items:center}
+.pillnav{display:flex;gap:4px;background:rgba(20,33,61,.55);backdrop-filter:blur(14px);border:1px solid rgba(244,237,224,.2);border-radius:99px;padding:5px}
+.pillnav a,.logo{text-decoration:none;font-size:14px;padding:6px 14px;border-radius:99px}
+.pillnav a:hover{background:rgba(244,237,224,.15)}
+.pillnav a:first-child{background:rgba(244,237,224,.18)}
+.logo{padding:0;font-weight:600}
+.dot{width:34px;height:34px;border-radius:50%;background:var(--c);color:var(--n);display:grid;place-items:center;font-weight:600;font-size:13px;text-decoration:none}
+.hero h1{position:relative;font-size:clamp(46px,8.4vw,120px);max-width:9.5em;margin-bottom:22px}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask span{display:inline-block;transform:translateY(105%);animation:rise 1.1s cubic-bezier(.2,.8,.2,1) forwards}
+.mask:nth-child(2) span{animation-delay:.15s}.mask:nth-child(3) span{animation-delay:.3s}
+@keyframes rise{to{transform:none}}
+.sub{position:relative;max-width:420px;font-size:14px;opacity:0;animation:fade 1s .8s forwards}
+@keyframes fade{to{opacity:1}}
+.cta{position:relative;display:flex;gap:22px;align-items:center;margin:20px 0 30px;font-size:14px;font-weight:600}
+.btn{display:inline-block;background:var(--r);color:var(--n);padding:12px 22px;border-radius:99px;text-decoration:none;font:inherit;font-size:14px;font-weight:600;border:0;cursor:pointer}
+.btn.o{background:none;color:inherit;border:1.5px solid currentColor}
+.card{position:absolute;right:5vw;top:96px;width:min(330px,88vw);z-index:2;background:rgba(244,237,224,.1);backdrop-filter:blur(18px);border:1px solid rgba(244,237,224,.22);border-radius:16px;padding:16px;opacity:0;animation:fade 1s 1s forwards}
+.me{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.me img{width:84px;height:84px;border-radius:50%;background:var(--c)}
+.me b{display:block;font-weight:600;font-size:18px}
+.me span{font-size:13px;opacity:.85}
+.mini{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;background:rgba(244,237,224,.12);border:1px solid rgba(244,237,224,.18);color:inherit;font:inherit;font-size:14px;border-radius:12px;padding:10px 12px;margin-top:8px;cursor:pointer}
+.mini small{display:block;opacity:.8;font-size:12px}
+.tag{background:var(--r);color:var(--n);border-radius:6px;font-size:11px;font-weight:600;padding:3px 8px;white-space:nowrap}
+.strip{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;border-top:1px solid rgba(244,237,224,.25);padding-top:16px;font-size:13px}
+.strip div{position:relative}
+.strip div:first-child::before{content:"";position:absolute;top:-17px;left:0;width:40%;height:2px;background:var(--r)}
+.strip b{display:block;color:var(--r);font-weight:600}
+.pin{height:300vh;position:relative}
+.pin>div{position:sticky;top:0;height:100vh;display:grid;place-items:center;overflow:hidden;padding:0 5vw}
+.pin h2{font-size:clamp(42px,10vw,140px);text-align:center;max-width:1100px}
+.pin .w{display:inline-block;opacity:.15;margin:0 .1em}
+.pin .w.k{color:var(--r)}
+.sec{padding:14vh 6vw}
+.sec>h2{font-size:clamp(38px,7vw,88px);margin-bottom:6vh}
+.cream{background:rgba(20,33,61,.35)}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.door{border:1px solid rgba(244,237,224,.3);border-radius:16px;background:rgba(244,237,224,.06);color:inherit;font:inherit;text-align:left;padding:26px;cursor:pointer;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:background .4s,color .4s}
+.door h3{font-size:32px}
+.door .body{max-height:0;overflow:hidden;opacity:0;transition:max-height .6s,opacity .6s}
+.door[aria-expanded=true]{background:var(--r);color:var(--n)}
+.door[aria-expanded=true] .body{max-height:420px;opacity:1;margin-top:14px}
+.work{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;width:100%;background:none;border:0;border-top:1.5px solid rgba(244,237,224,.4);color:inherit;font:inherit;text-align:left;padding:32px 0;cursor:pointer;transition:padding .4s}
+.work:last-child{border-bottom:1.5px solid rgba(244,237,224,.4)}
+.work h3{font-size:clamp(26px,4.4vw,52px)}
+.work small{display:block;font-size:15px;margin-top:8px}
+.work:hover{padding-left:22px}
+.work b{font-size:14px;color:var(--n);background:var(--r);border-radius:99px;padding:8px 16px;white-space:nowrap}
+.skills{overflow:hidden}
+.row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:22px 0;border-top:1px solid rgba(244,237,224,.3);transform:translateX(var(--x,40%));opacity:var(--o,0)}
+.row h3{font-size:28px;min-width:220px}
+.row p{margin:0;flex:1;min-width:240px}
+.bus{display:block;width:100%;height:110px;margin-top:5vh}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:44px}
+.tl h3{font-size:30px;margin-bottom:14px}
+.tl ul{padding-left:20px;margin:8px 0 12px}
+.certs{display:flex;flex-wrap:wrap;gap:10px}
+.cert{background:none;border:1.5px solid rgba(244,237,224,.5);border-radius:99px;color:inherit;font:inherit;font-size:15px;padding:10px 18px;cursor:pointer;transition:background .3s,color .3s}
+.cert:hover{background:var(--r);color:var(--n);border-color:var(--r)}
+.link{background:none;border:0;color:var(--r);font:inherit;font-weight:600;cursor:pointer;padding:0;text-decoration:underline}
+footer{padding:16vh 6vw 8vh;text-align:center}
+footer h2{font-size:clamp(44px,10vw,140px)}
+footer p{margin:24px 0}
+.links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;font-weight:600}
+dialog{border:1px solid rgba(244,237,224,.3);background:var(--n);color:var(--c);max-width:720px;width:92vw;max-height:90vh;overflow:auto;border-radius:16px;padding:28px;animation:pop .35s ease}
+dialog::backdrop{background:rgba(20,33,61,.82)}
+@keyframes pop{from{opacity:0;transform:scale(.94)}}
+dialog h3{font-size:34px;margin-bottom:12px}
+dialog img{width:100%;border-radius:8px;margin:10px 0}
+dialog ul{padding-left:20px}
+@media(max-width:820px){.card{position:relative;top:auto;right:auto;margin:100px 0 24px}.hero{justify-content:flex-start}.pillnav a:not(:first-child){display:none}.work{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.mask span,.sub,.card{transform:none;opacity:1}.pin{height:auto}.pin>div{position:static;height:auto;padding:12vh 5vw}.pin .w{opacity:1}.row{transform:none;opacity:1}}
+</style></head>
+<body>
+<nav><a class="logo" href="#top">Abinavu M</a><div class="pillnav"><a href="#top">Home</a><a href="#about">About</a><a href="#works">Works</a><a href="#skills">Skills</a><a href="#path">Path</a></div><a class="dot" href="#contact" aria-label="Contact">AM</a></nav>
+
+<header class="hero" id="top">
+<div class="glow"></div><canvas id="scope" aria-hidden="true"></canvas><div class="flute"></div>
+<aside class="card"><div class="me"><img id="ph" alt="Abinavu M"><div><b>Abinavu M</b><span>Embedded Systems Engineer (Fresher)</span></div></div>
+<button class="mini" data-cert="saron"><span>Saron Innovature Labs<small>IoT intern · 15 days</small></span><span class="tag">Certificate</span></button>
+<button class="mini" data-cert="keltron"><span>Keltron<small>Embedded intern · 1 week</small></span><span class="tag">Certificate</span></button></aside>
+<h1><span class="mask"><span>Firmware that</span></span><span class="mask"><span>runs on real</span></span><span class="mask"><span>hardware.</span></span></h1>
+<p class="sub">Abinavu M is an embedded systems engineer and final-year ECE student building ESP32, STM32 and Arduino firmware, sensor systems and IoT dashboards.</p>
+<div class="cta"><a class="btn" href="#works">See my projects</a><a href="#contact">Get in touch</a></div>
+<div class="strip"><div><b>Final-year ECE</b>B.E., 2023–2027</div><div><b>ESP32 · STM32</b>Arduino, ATmega32</div><div><b>ESP-NOW · Wi-Fi</b>Bluetooth, WebSocket</div><div><b>Two internships</b>Keltron, Saron Labs</div><div><b>KiCad PCB</b>Design course</div></div>
+</header>
+
+<section class="pin" id="chapter" aria-label="Introduction"><div><h2 id="big"></h2></div></section>
+
+<section class="sec" id="about">
+<h2>About me</h2>
+<div class="doors">
+<button class="door" aria-expanded="false"><h3>Who I am</h3><div class="body">Final-year B.E. ECE student at Dhanalakshmi Srinivasan College of Engineering (82%). I did embedded internships at Keltron and Saron Innovature Labs and completed a KiCad PCB design course.</div><span>Open</span></button>
+<button class="door" aria-expanded="false"><h3>What I do</h3><div class="body">I write firmware in Embedded C, interface sensors over I2C and UART, link devices with ESP-NOW, Wi-Fi and Bluetooth, and show live data on cloud dashboards.</div><span>Open</span></button>
+<button class="door" aria-expanded="false"><h3>How I think</h3><div class="body">Confirm before acting. My accident detection system cross-checks several sensors before it sends an alert, so one noisy reading never raises a false alarm.</div><span>Open</span></button>
+</div></section>
+
+<section class="sec cream" id="works">
+<h2>Selected works</h2>
+<button class="work" data-i="0"><div><h3>BikeGuard accident detection</h3><small>Four ESP32 nodes · ESP-NOW · GPS/GSM · live WebSocket dashboard</small></div><b>View project</b></button>
+<button class="work" data-i="1"><div><h3>Smart home gas and water monitor</h3><small>Gas-leak and water-level sensing with threshold alerts</small></div><b>View project</b></button>
+<button class="work" data-i="2"><div><h3>Personal interactive robot</h3><small>ESP32 · Embedded C · real-time response to the user</small></div><b>View project</b></button>
+</section>
+
+<section class="sec skills" id="skills">
+<h2 style="margin-bottom:4vh">Firmware is my medium</h2>
+<div class="row"><h3>Languages</h3><p>Embedded C, C, Python</p></div>
+<div class="row"><h3>Platforms</h3><p>ESP32, ESP32-CAM, STM32 (ARM Cortex-M), Arduino, ATmega32, PIC, Raspberry Pi</p></div>
+<div class="row"><h3>Protocols</h3><p>I2C, UART, ESP-NOW, Wi-Fi, Bluetooth, WebSocket, GSM, GPS</p></div>
+<div class="row"><h3>Sensors and drivers</h3><p>Accelerometer, pulse, ultrasonic, IR, gas, water-level, INA219, MLX90640, relays, MOSFETs, motor drivers</p></div>
+<div class="row"><h3>IoT and tools</h3><p>Blynk, Adafruit IO, Arduino IDE, TinkerCAD, GitHub, KiCad</p></div>
+<svg class="bus" id="bus" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path id="trace" d="M0 60H180L210 20H400L430 100H620L650 60H1000" fill="none" stroke="#FF6B5B" stroke-width="3"/></svg>
+</section>
+
+<section class="sec cream" id="path">
+<h2>Path</h2>
+<div class="tl">
+<div><h3>Experience</h3><p><strong>Embedded Systems Intern, Saron Innovature Labs LLP</strong><br>15 days, Dec 2025 – Jan 2026</p><ul><li>Built an IoT system that streams live sensor data to a cloud dashboard over Wi-Fi.</li></ul><button class="link" data-cert="saron">View certificate</button>
+<p style="margin-top:22px"><strong>Embedded Systems Intern, Keltron</strong><br>1 week, July 2025</p><ul><li>Simulated sensor circuits in TinkerCAD.</li><li>Wrote Embedded C for PIC and ATmega32.</li></ul><button class="link" data-cert="keltron">View certificate</button></div>
+<div><h3>Education</h3><p><strong>B.E. Electronics and Communication Engineering</strong><br>Dhanalakshmi Srinivasan College of Engineering, 2023–2027 (expected), 82%</p><p><strong>HSC</strong><br>Alpha GK Matriculation Higher Secondary School, 2022–2023, 72%</p></div>
+<div><h3>Certificates</h3><div class="certs">
+<button class="cert" data-cert="semi">Semiconductor Devices · NPTEL Elite</button>
+<button class="cert" data-cert="emb">Embedded System Design · NPTEL Elite</button>
+<button class="cert" data-cert="pcb">PCB Design, KiCad</button>
+<button class="cert" data-cert="scout">Scouts: Rajya Puraskar</button></div></div>
+<div><h3>Activities</h3><ul><li>1st place, Science Expo, Ooty Radio Astronomy Centre</li><li>Hackathon and TN Illam Innovation Challenge (EDII-TN)</li><li>NSS volunteer; repaired basic electronic devices</li><li>Baduga dance, Indian Records Academy</li></ul></div>
+</div></section>
+
+<footer id="contact">
+<h2>Let's build something.</h2>
+<p>Tamil · English · Malayalam<br>abinavuabinavu@gmail.com · +91 9003989727</p>
+<div class="links"><a href="mailto:abinavuabinavu@gmail.com">Email</a><a href="https://linkedin.com/in/abi-abinavu-894589358">LinkedIn</a><a href="https://github.com/abiabinavu">GitHub</a><a href="#top">Back to top</a></div>
+</footer>
+
+<dialog id="dlg"><div id="dbody"></div><button class="btn o" id="close">Close</button></dialog>
+
+<script>
+const IMG={"scout": "assets/scout.jpg", "photo": "assets/photo.png", "semi": "assets/semi.jpg", "emb": "assets/emb.jpg", "saron": "assets/saron.jpg", "keltron": "assets/keltron.jpg", "pcb": "assets/pcb.jpg"};
+document.getElementById('ph').src=IMG.photo;
+const P=[
+{t:"BikeGuard: ESP32 multilevel accident detection",d:["Four-node ESP32 safety network over ESP-NOW: helmet unit (pulse and alcohol sensors), crash-detection state machine, bike unit (GPS/GSM) and an OLED display unit running a web server with a live WebSocket dashboard.","Multilevel confirmation: tri-axis accelerometer thresholds (3.0–6.0 g impact vs ~1.0 g normal riding) are cross-checked with helmet, pulse and GPS status to cut false alerts before GSM emergency notification.","Debugged ESP32 Arduino Core v3.x compatibility issues."],g:"https://github.com/abiabinavu/esp32-multilevel-accident-detection"},
+{t:"Smart home gas leak and water level monitor",d:["Gas-leak and water-level sensors integrated with a microcontroller to monitor the home continuously.","Threshold logic triggers alerts on unsafe conditions."],g:"https://github.com/abiabinavu/smart-home-gas-leak-water-level-monitoring"},
+{t:"Personal interactive robot with ESP32",d:["Interactive robot on ESP32 in Embedded C.","Sensors and output peripherals let it respond to the user in real time."],g:"https://github.com/abiabinavu/interactive-robot-esp32"}];
+const C={saron:["Saron Innovature Labs: internship certificate","IoT-based application development, 15-12-2025 to 01-01-2026 (15 days)"],keltron:["Keltron: internship certificate","Embedded systems, 14-07-2025 to 20-07-2025 (1 week)"],semi:["NPTEL: Introduction to Semiconductor Devices","Elite, 67% · IIT Hyderabad · Jul–Oct 2025"],emb:["NPTEL: Introduction to Embedded System Design","Elite, 62% · IIT Madras · Jan–Apr 2026"],pcb:["PCB Design Course (KiCad)","27 October 2026 · Certificate ID 10949908"],scout:["The Bharat Scouts and Guides: Rajya Puraskar","Scout award, 12-01-2025 · Leadership, teamwork, discipline, community service"]};
+const dlg=document.getElementById('dlg'),db=document.getElementById('dbody');
+document.querySelectorAll('.work').forEach(b=>b.onclick=()=>{const p=P[b.dataset.i];db.innerHTML='<h3>'+p.t+'</h3><ul>'+p.d.map(x=>'<li>'+x+'</li>').join('')+'</ul><a class="btn" href="'+p.g+'" target="_blank" rel="noopener">Open on GitHub</a> '; dlg.showModal()});
+document.querySelectorAll('[data-cert]').forEach(b=>b.onclick=()=>{const k=b.dataset.cert,c=C[k];db.innerHTML='<h3>'+c[0]+'</h3><p>'+c[1]+'</p>'+(IMG[k]?'<img src="'+IMG[k]+'" alt="'+c[0]+'">':'<p>Certificate image coming soon.</p>');dlg.showModal()});
+document.getElementById('close').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+document.querySelectorAll('.door').forEach(d=>d.onclick=()=>{const o=d.getAttribute('aria-expanded')==='true';document.querySelectorAll('.door').forEach(x=>{x.setAttribute('aria-expanded','false');x.querySelector('span').textContent='Open'});d.setAttribute('aria-expanded',String(!o));d.querySelector('span').textContent=o?'Open':'Close'});
+const big=document.getElementById('big');"Where firmware meets real hardware".split(' ').forEach((w,i)=>{const s=document.createElement('span');s.className='w'+(i==1?' k':'');s.textContent=w;big.appendChild(s)});
+const ws=[...big.children],pin=document.getElementById('chapter'),rows=[...document.querySelectorAll('.row')],tr=document.getElementById('trace'),L=tr.getTotalLength();
+tr.style.strokeDasharray=L;tr.style.strokeDashoffset=L;
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function tick(){if(rm){tr.style.strokeDashoffset=0;return}
+const vh=innerHeight,r=pin.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(r.height-vh)));
+ws.forEach((w,i)=>{const k=Math.min(1,Math.max(0,p*ws.length*1.15-i));w.style.opacity=.15+.85*k;w.style.transform='translateY('+(40*(1-k))+'px)'});
+rows.forEach(w=>{const t=w.getBoundingClientRect().top,k=Math.min(1,Math.max(0,(vh-t)/(vh*.45)));w.style.setProperty('--x',(40*(1-k))+'%');w.style.setProperty('--o',k)});
+const b=document.getElementById('bus').getBoundingClientRect();tr.style.strokeDashoffset=L*(1-Math.min(1,Math.max(0,(vh-b.top)/(vh*.6))))}
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);tick();
+const c=document.getElementById('scope'),x=c.getContext('2d');let t=0,mx=.5;
+addEventListener('pointermove',e=>mx=e.clientX/innerWidth);
+function size(){c.width=c.clientWidth*devicePixelRatio;c.height=c.clientHeight*devicePixelRatio}size();addEventListener('resize',size);
+function draw(){const W=c.width,H=c.height;x.clearRect(0,0,W,H);x.strokeStyle='#F4EDE0';x.lineWidth=2.5*devicePixelRatio;x.beginPath();const f=2+mx*6;
+for(let i=0;i<=W;i+=4){const u=i/W,y=H*.3+Math.sin(u*f*Math.PI*2+t)*H*.07*(Math.sin(u*f*Math.PI+t*.5)>0?1:.5);i?x.lineTo(i,y):x.moveTo(i,y)}x.stroke();t+=rm?0:.03;if(!rm)requestAnimationFrame(draw)}
+draw();
+</script>
+</body></html>

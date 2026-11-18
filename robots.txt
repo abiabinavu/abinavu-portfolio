@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abiabinavu.github.io/abinavu-portfolio/sitemap.xml
